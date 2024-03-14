@@ -23,3 +23,11 @@
 - It just changes the URL and set it to the URL we're trying to navigate to but it then prevent the default of sending a request.
 - And instead let ```React Router``` know about the new URL and ensures that the ```React Router``` loads the appropriate element.
 - Now, what the ```Link``` component does under the hood is it does render an `<a>` anchor element, but it basically listens for clicks on that element, prevents the browser default of sending HTTP request if the link clicked and instead simply takes a look at the route definitions to update the page accordingly.
+<br/>
+
+### ```NavLink```
+- `NavLink` is used just like the `Link` Component, but `NavLink` has one special behaviour.
+- If you add the `className` prop to it, it's actually not the regular `className` prop which takes a string, but instead it is a prop that takes a function.
+- And that function should return the class name.
+- Now that function also automatically receives an object from which we can de-structure the `isActive` property.
+- And this object with `isActive` property is provided by `react-router-dom` and `isActive` is a boolean, that's true if the link is currently active
