@@ -15,8 +15,8 @@
 
 
 ### Activate the router
-This ```RouterProvider``` component has a special prop which we must set, the ```router``` prop.
-And the value we pass to the ```router``` prop should be a router created with ```createBrowserRouter```.
+- This ```RouterProvider``` component has a special prop which we must set, the ```router``` prop.
+- And the value we pass to the ```router``` prop should be a router created with ```createBrowserRouter```.
 
 ### ```Link``` 
 - ```Link``` is a special component provided by ```react-router-dom```.
