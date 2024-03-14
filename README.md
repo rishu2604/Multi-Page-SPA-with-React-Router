@@ -31,3 +31,8 @@
 - And that function should return the class name.
 - Now that function also automatically receives an object from which we can de-structure the `isActive` property.
 - And this object with `isActive` property is provided by `react-router-dom` and `isActive` is a boolean, that's true if the link is currently active
+<br/>
+
+### `useNavigate`
+- `useNavigate` is a hook provided by `react-router-dom` which is used for imperative routing.
+- In some situations, maybe some form was submitted or because some timer expired, you might want to trigger a navigation action from inside code, and you can do this with the help of `useNavigate` hook.
