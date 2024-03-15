@@ -36,3 +36,35 @@
 ### `useNavigate`
 - `useNavigate` is a hook provided by `react-router-dom` which is used for imperative routing.
 - In some situations, maybe some form was submitted or because some timer expired, you might want to trigger a navigation action from inside code, and you can do this with the help of `useNavigate` hook.
+<br/>
+
+### `useParams`
+- `react-router-dom` gives us another tool for getting hold of the actual value used instead of that placeholder (e.g. `:id`)
+- And the tool which we get from `react-router-dom` is the `useParams` hook.
+- This hook gives us a params object.
+- This params object is a simple javascript object which contains every dynamic path segment we defined in our route definition as a property.
+<br/>
+
+### `<Link to=".." relative='path'>Back</Link>`
+- `to=".."` is used to go back.
+- By default `relative="route"`.
+<br>
+
+
+### Index Routes
+- Index Routes allows us to define the default route that should be loaded if the parent routes path is active.
+```javascript
+const router = createBrowserRouter([{
+    path: '/',
+    element: <RootLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        // path: '',
+        // We can use 'index' instead of defining an empty path while using relative paths.
+        index: true,
+        element: <HomePage />
+      }
+    ]
+}])
+
