@@ -8,7 +8,7 @@ function HomePage(){
         <>
             <h1>My Home Page</h1>
             <p>
-                Go to <Link to="/product">Products Page </Link> 
+                Go to <Link to="product">Products Page </Link> 
             </p>
             <button onClick={navigateHandler}>Navigate</button>
         </>

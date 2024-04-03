@@ -67,4 +67,7 @@ const router = createBrowserRouter([{
       }
     ]
 }])
+```
 
+### Outlet
+- Outlet is a marker or a place where the child routes should be rendered
